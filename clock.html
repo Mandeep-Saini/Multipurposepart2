@@ -1,0 +1,63 @@
+<!--Monika --> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="css/css.css">
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+
+   <div id="wrapper">
+
+
+    <!-- Header -->
+    <div class="header">
+       <div id="logo"> <img src="images/logo.png" alt="Logo" width="100" height="100"></div>
+                <h1 id="h1">Clock And Events</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbars">
+        <a href="index.html">Home</a>
+        <a href="clock.html">World Clock</a>
+        <a href="cal.html">Calendar</a>
+        <a href="alarm.html">Alarm Clock</a>
+    </div>
+   
+    <!-- The flexible grid (content) -->
+  <div class="form-group">
+      <label for="sel1">Select Country</label>
+      <select class="form-control" id="zones">
+        <option value="">--Select--</option>
+        <option value="10">Australia</option> 
+        <option value="8">China</option>
+        <option value="5.5">India</option>
+        <option value="13">Newzealand</option>
+        <option value="1">UK</option>
+        <option value="-4">US EST</option>
+
+    </select>
+       </div>
+    <span id="time"></span>
+    <canvas id="canvas" width="400" height="400">
+    </canvas>
+
+    <!-- Footer -->
+    <footer>
+        Copyright &copy; 2018
+    </footer>
+</div>
+    <script type="text/javascript" src="js/clock.js">
+        
+    </script>
+</body>
+
+</html>

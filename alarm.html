@@ -1,0 +1,95 @@
+<!--Gurjit --> 
+<html lang='en'>
+
+<head>
+    <title>My Dream Alarm Clock</title>
+    <meta charset='utf-8' name='viewport' content='width=device-width, initial=scale=1.0'>
+    
+<link rel="stylesheet" href="css/css.css">
+</head>
+   
+
+
+<body>
+
+  <div id="wrapper">
+
+
+    <!-- Header -->
+    <div class="header">
+       <div id="logo"> <img src="images/logo.png" alt="Logo" width="100" height="100"></div>
+               <h1 id="h1">Clock And Events</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbars">
+        <a href="index.html">Home</a>
+        <a href="clock.html">World Clock</a>
+        <a href="cal.html">Calendar</a>
+        <a href="alarm.html">Alarm Clock</a>
+    </div>
+   
+       <audio id="penguinAudio">
+        <source src="audio/pen_voice.mp3" type="audio/mpeg">
+    </audio>
+      
+    <div id='main-container'>
+        <h2 id='clock'></h2>
+        
+        
+    </div>
+
+    <div id='alarm-container'>
+        <h3>Set Alarm Time</h3>
+        <div id="drop">
+        <label>
+            <div>
+                <select id='alarmhrs'></select>
+                
+            </div>
+        </label>
+        <label>
+            <div>
+                <select id='alarmmins'></select>
+            </div>
+        </label>
+        <label>
+            <div>
+                <select id='alarmsecs'></select>
+            </div>
+        </label>
+        <label>
+            <div>
+                <select id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+        </label>
+        </div>
+    </div>
+         <br>
+ 
+
+    <div id='buttonHolder'>
+        <div>
+            <button id='setButton' onClick='alarmSet()'>Set Alarm</button>
+        </div>
+
+        <div>
+            <button id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+        </div>
+
+    </div>
+      <!-- Footer -->
+     <footer>
+        Copyright &copy; 2018
+    </footer>
+
+    <script type='text/javascript' src='js/alarm.js'></script>
+     
+   </div>
+  
+</body>
+
+</html>
